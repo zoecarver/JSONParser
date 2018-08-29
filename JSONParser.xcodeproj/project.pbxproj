@@ -8,12 +8,51 @@
 
 /* Begin PBXBuildFile section */
 		C8CF06E62137275E004DCF0A /* JSONParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C8CF06E42137275E004DCF0A /* JSONParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8CF06ED2137276B004DCF0A /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF06EC2137276B004DCF0A /* Main.swift */; };
+		C8CF06F0213727E1004DCF0A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CF06EF213727E1004DCF0A /* SwiftyJSON.framework */; };
+		C8CF06FA2137285C004DCF0A /* JSONParser_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C8CF06F82137285C004DCF0A /* JSONParser_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8CF06FE21372861004DCF0A /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF06EC2137276B004DCF0A /* Main.swift */; };
+		C8CF070621372871004DCF0A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF070521372871004DCF0A /* main.swift */; };
+		C8CF070C213728CC004DCF0A /* JSONParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CF06E12137275E004DCF0A /* JSONParser.framework */; };
+		C8CF070D213728D6004DCF0A /* JSONParser.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C8CF06E12137275E004DCF0A /* JSONParser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C8CF070E21372A12004DCF0A /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C8CF06EF213727E1004DCF0A /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8CF070A213728C6004DCF0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8CF06D82137275E004DCF0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8CF06E02137275E004DCF0A;
+			remoteInfo = JSONParser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C8CF070121372870004DCF0A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = usr/share/man/man1;
+			dstSubfolderSpec = 10;
+			files = (
+				C8CF070E21372A12004DCF0A /* SwiftyJSON.framework in CopyFiles */,
+				C8CF070D213728D6004DCF0A /* JSONParser.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C8CF06E12137275E004DCF0A /* JSONParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8CF06E42137275E004DCF0A /* JSONParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
 		C8CF06E52137275E004DCF0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8CF06EC2137276B004DCF0A /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		C8CF06EF213727E1004DCF0A /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
+		C8CF06F62137285B004DCF0A /* JSONParser_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONParser_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8CF06F82137285C004DCF0A /* JSONParser_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONParser_iOS.h; sourceTree = "<group>"; };
+		C8CF06F92137285C004DCF0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8CF070321372870004DCF0A /* JSONParser-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "JSONParser-test"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8CF070521372871004DCF0A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +60,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8CF06F0213727E1004DCF0A /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8CF06F32137285B004DCF0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8CF070021372870004DCF0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8CF070C213728CC004DCF0A /* JSONParser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -31,7 +86,10 @@
 			isa = PBXGroup;
 			children = (
 				C8CF06E32137275E004DCF0A /* JSONParser */,
+				C8CF06F72137285C004DCF0A /* JSONParser-iOS */,
+				C8CF070421372871004DCF0A /* JSONParser-test */,
 				C8CF06E22137275E004DCF0A /* Products */,
+				C8CF06EE213727E1004DCF0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				C8CF06E12137275E004DCF0A /* JSONParser.framework */,
+				C8CF06F62137285B004DCF0A /* JSONParser_iOS.framework */,
+				C8CF070321372870004DCF0A /* JSONParser-test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,8 +108,34 @@
 			children = (
 				C8CF06E42137275E004DCF0A /* JSONParser.h */,
 				C8CF06E52137275E004DCF0A /* Info.plist */,
+				C8CF06EC2137276B004DCF0A /* Main.swift */,
 			);
 			path = JSONParser;
+			sourceTree = "<group>";
+		};
+		C8CF06EE213727E1004DCF0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8CF06EF213727E1004DCF0A /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8CF06F72137285C004DCF0A /* JSONParser-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C8CF06F82137285C004DCF0A /* JSONParser_iOS.h */,
+				C8CF06F92137285C004DCF0A /* Info.plist */,
+			);
+			path = "JSONParser-iOS";
+			sourceTree = "<group>";
+		};
+		C8CF070421372871004DCF0A /* JSONParser-test */ = {
+			isa = PBXGroup;
+			children = (
+				C8CF070521372871004DCF0A /* main.swift */,
+			);
+			path = "JSONParser-test";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,6 +146,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8CF06E62137275E004DCF0A /* JSONParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8CF06F12137285B004DCF0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8CF06FA2137285C004DCF0A /* JSONParser_iOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,16 +178,60 @@
 			productReference = C8CF06E12137275E004DCF0A /* JSONParser.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C8CF06F52137285B004DCF0A /* JSONParser-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8CF06FB2137285C004DCF0A /* Build configuration list for PBXNativeTarget "JSONParser-iOS" */;
+			buildPhases = (
+				C8CF06F12137285B004DCF0A /* Headers */,
+				C8CF06F22137285B004DCF0A /* Sources */,
+				C8CF06F32137285B004DCF0A /* Frameworks */,
+				C8CF06F42137285B004DCF0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JSONParser-iOS";
+			productName = "JSONParser-iOS";
+			productReference = C8CF06F62137285B004DCF0A /* JSONParser_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8CF070221372870004DCF0A /* JSONParser-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8CF070721372871004DCF0A /* Build configuration list for PBXNativeTarget "JSONParser-test" */;
+			buildPhases = (
+				C8CF06FF21372870004DCF0A /* Sources */,
+				C8CF070021372870004DCF0A /* Frameworks */,
+				C8CF070121372870004DCF0A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8CF070B213728C6004DCF0A /* PBXTargetDependency */,
+			);
+			name = "JSONParser-test";
+			productName = "JSONParser-test";
+			productReference = C8CF070321372870004DCF0A /* JSONParser-test */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C8CF06D82137275E004DCF0A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Zoe IAMZOE.io";
 				TargetAttributes = {
 					C8CF06E02137275E004DCF0A = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					C8CF06F52137285B004DCF0A = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					C8CF070221372870004DCF0A = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -111,12 +249,21 @@
 			projectRoot = "";
 			targets = (
 				C8CF06E02137275E004DCF0A /* JSONParser */,
+				C8CF06F52137285B004DCF0A /* JSONParser-iOS */,
+				C8CF070221372870004DCF0A /* JSONParser-test */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C8CF06DF2137275E004DCF0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8CF06F42137285B004DCF0A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,10 +277,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8CF06ED2137276B004DCF0A /* Main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8CF06F22137285B004DCF0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8CF06FE21372861004DCF0A /* Main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8CF06FF21372870004DCF0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8CF070621372871004DCF0A /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8CF070B213728C6004DCF0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8CF06E02137275E004DCF0A /* JSONParser */;
+			targetProxy = C8CF070A213728C6004DCF0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C8CF06E72137275E004DCF0A /* Debug */ = {
@@ -260,6 +432,7 @@
 		C8CF06EA2137275E004DCF0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -268,6 +441,42 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = JSONParser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoecarver.JSONParser;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		C8CF06EB2137275E004DCF0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 94XXNBEG28;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = JSONParser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -281,30 +490,97 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 			};
-			name = Debug;
+			name = Release;
 		};
-		C8CF06EB2137275E004DCF0A /* Release */ = {
+		C8CF06FC2137285C004DCF0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 94XXNBEG28;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = JSONParser/Info.plist;
+				INFOPLIST_FILE = "JSONParser-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zoecarver.JSONParser;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zoecarver.JSONParser-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8CF06FD2137285C004DCF0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 94XXNBEG28;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "JSONParser-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zoecarver.JSONParser-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8CF070821372871004DCF0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94XXNBEG28;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/JSONParser.framework/Versions/Current/Frameworks",
+					"$(SRCROOT)/Carthage/Build/Mac/",
+					"${DT_TOOLCHAIN_DIR}/usr/lib/swift/macosx/",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"${DT_TOOLCHAIN_DIR}/usr/lib/swift/macosx/\n${DT_TOOLCHAIN_DIR}/usr/lib/swift/macosx/\n",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		C8CF070921372871004DCF0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94XXNBEG28;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/JSONParser.framework/Versions/Current/Frameworks",
+					"$(SRCROOT)/Carthage/Build/Mac/",
+					"${DT_TOOLCHAIN_DIR}/usr/lib/swift/macosx/",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"${DT_TOOLCHAIN_DIR}/usr/lib/swift/macosx/\n${DT_TOOLCHAIN_DIR}/usr/lib/swift/macosx/\n",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -326,6 +602,24 @@
 			buildConfigurations = (
 				C8CF06EA2137275E004DCF0A /* Debug */,
 				C8CF06EB2137275E004DCF0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8CF06FB2137285C004DCF0A /* Build configuration list for PBXNativeTarget "JSONParser-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8CF06FC2137285C004DCF0A /* Debug */,
+				C8CF06FD2137285C004DCF0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8CF070721372871004DCF0A /* Build configuration list for PBXNativeTarget "JSONParser-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8CF070821372871004DCF0A /* Debug */,
+				C8CF070921372871004DCF0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
