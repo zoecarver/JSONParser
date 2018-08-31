@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C839A6A12139D47D00793368 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C839A6A02139D47D00793368 /* SwiftyJSON.framework */; };
 		C8CF06E62137275E004DCF0A /* JSONParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C8CF06E42137275E004DCF0A /* JSONParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8CF06ED2137276B004DCF0A /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF06EC2137276B004DCF0A /* Main.swift */; };
 		C8CF06F0213727E1004DCF0A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CF06EF213727E1004DCF0A /* SwiftyJSON.framework */; };
@@ -43,6 +44,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C839A6A02139D47D00793368 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		C8CF06E12137275E004DCF0A /* JSONParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8CF06E42137275E004DCF0A /* JSONParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
 		C8CF06E52137275E004DCF0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C839A6A12139D47D00793368 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +119,7 @@
 		C8CF06EE213727E1004DCF0A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C839A6A02139D47D00793368 /* SwiftyJSON.framework */,
 				C8CF06EF213727E1004DCF0A /* SwiftyJSON.framework */,
 			);
 			name = Frameworks;
@@ -502,6 +506,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "JSONParser-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -529,6 +537,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "JSONParser-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;

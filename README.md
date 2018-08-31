@@ -42,4 +42,8 @@ do {
 JSONParser relies on `@dynamicMemberLookup` which is only available in swift 4.2.
 
 ### Install
-Coming soon.
+
+You can use carthage to install this framework:
+```
+github "pudility/JSONParser"
+```
